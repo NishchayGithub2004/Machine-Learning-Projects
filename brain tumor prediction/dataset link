@@ -1,1 +1,7 @@
+https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection
 
+from this link, an extractable folder can be downloaded which contains 2 folders named 'yes' and 'no'.
+
+'yes' folder contains MRI scans of brains with tumors and 'no' folder contains MRI scans of brains without tumors.
+
+the code to split these images into training and testing data can be found in the jupyter notebook of this folder.
