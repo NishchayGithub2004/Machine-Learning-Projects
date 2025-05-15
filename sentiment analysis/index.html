@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Media Posts Sentiment Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .positive {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .negative {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Social Media Posts Sentiment Analyzer</h1>
+    <form method="POST">
+        <textarea name="text" rows="4" placeholder="Enter text to analyze sentiment..."></textarea>
+        <br>
+        <button type="submit">Predict Sentiment</button>
+    </form>
+
+    {% if result %}
+    <div class="result {% if result == 'Positive' %}positive{% else %}negative{% endif %}">
+        <h2>{{ result }}</h2>
+    </div>
+    {% endif %}
+</body>
+</html>
