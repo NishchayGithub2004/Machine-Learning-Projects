@@ -1,1 +1,5 @@
+https://www.kaggle.com/datasets/bittlingmayer/amazonreviews
 
+This is the link to a zip file that contains dataset in 'bz2' format.
+
+Code to split it's contents into training and testing set is in the jupyter notebook of this folder.
